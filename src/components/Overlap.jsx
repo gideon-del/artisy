@@ -8,7 +8,7 @@ import brown from "../assets/brownDot.png";
 
 const Overlap = () => {
   return (
-    <div className="relative w-11/12 mx-auto px-10">
+    <div className="relative w-11/12 mx-auto px-10 md:hidden">
       <figure className="overlap">
         <img src={frontImg} className="z-30 w-[95%] m-auto" />
         <img src={middleImg} className="z-10" />
