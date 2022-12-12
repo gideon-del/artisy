@@ -15,9 +15,9 @@ const Overlap = () => {
         <img src={backImg} />
       </figure>
 
-      <img src={blue} className="absolute top-0 right-0 z-50 w-10" />
-      <img src={red} className="absolute bottom-0 right-0 z-50 w-10" />
-      <img src={brown} className="absolute bottom-5 left-0 z-50 w-10" />
+      <img src={blue} className="absolute top-0 right-0 z-40 w-10" />
+      <img src={red} className="absolute bottom-0 right-0 z-40 w-10" />
+      <img src={brown} className="absolute bottom-5 left-0 z-40 w-10" />
     </div>
   );
 };

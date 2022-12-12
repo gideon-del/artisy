@@ -8,7 +8,7 @@
   @apply relative p-4 font-satoshi md:flex md:justify-evenly md:mb-12;
 }
 .nav {
-  @apply flex flex-col space-y-10 fixed w-screen transition-all duration-300 h-screen md:translate-x-0 md:relative md:flex-row  md:h-auto md:w-auto md:space-y-0 md:space-x-14  bg-white md:justify-around;
+  @apply flex flex-col space-y-10 fixed w-screen transition-all duration-300 h-screen md:translate-x-0 md:relative md:flex-row  md:h-auto md:w-auto md:space-y-0 md:space-x-14  bg-white md:justify-around z-50 right-0;
   flex-basis: 50%;
 }
 .logo {
