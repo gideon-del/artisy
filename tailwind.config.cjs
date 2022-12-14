@@ -9,7 +9,8 @@ module.exports = {
         stixTwoText:['STIX Two Text', 'sans-serif']
       },
       colors:{
-        titleHome:'#292929'
+        titleHome:'#292929',
+        darkBlue:'#333333'
       }
     
     },

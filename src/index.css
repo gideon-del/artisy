@@ -33,3 +33,17 @@ img {
   grid-column: 1 / -1;
   grid-row: 1/ -1;
 }
+/*Feutured products*/
+.overlay {
+  @apply absolute top-0 right-0 w-full h-full z-40  bg-titleHome;
+}
+.product__title {
+  font-size: clamp(40px, 10vw, 30px);
+}
+.product__description {
+  font-size: clamp(32px, 10vw, 16px);
+}
+.product__creators > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
