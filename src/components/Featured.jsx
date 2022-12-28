@@ -18,8 +18,8 @@ const Featured = ({ section, reverse, lastEl }) => {
       >
         <figure className="flex-1 relative">
           <img src={section} />
-          <div className="group hover:opacity-100 opacity-0   cursor-pointer">
-            <div className="overlay group-hover:opacity-50 duration-75 transition-all"></div>
+          <div className="group hover:opacity-100 opacity-0   cursor-pointer after:absolute after:h-full after:bg-black after:opacity-0 after:inset-0 hover:after:opacity-30 transition-all duration-150 ease-in">
+            {/* <div className="overlay group-hover:opacity-50 duration-75 transition-all"></div> */}
             <p className="text-white font-stixTwoText font-bold text-center product__title z-50 duration-75 transition-all absolute top-2 group-hover:opacity-100 w-full">
               Boolean Egyptian
               <img />

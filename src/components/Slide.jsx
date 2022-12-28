@@ -7,7 +7,9 @@ const Slide = ({ item, counter }) => {
         <img
           src={pic}
           key={pic}
-          style={{ transform: `translateX(${-counter * 100}%)` }}
+          style={{
+            transform: `translateX(${-counter * 100}%)`,
+          }}
           className="transition-transform duration-300"
         />
       ))}
