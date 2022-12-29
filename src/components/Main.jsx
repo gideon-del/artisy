@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FeaturedProducts from "./FeaturedProducts";
 import Overlap from "./Overlap";
 import Slider from "./Slider";
@@ -10,6 +10,7 @@ import arrowLink from "../assets/LinkArrow.svg";
 import arrowLinkMobile from "../assets/linkArr.svg";
 import creator from "../assets/About/creator.png";
 
+const DUMMY_DATA = ["editorials", "fashion", "lifestyle", "blueprint"];
 const Main = () => {
   return (
     <main>
@@ -96,24 +97,42 @@ const Main = () => {
           </picture>
         </div>
       </section>
-      <section className="top-creators">
-        <div className="md:pl-20">
-          <h1 className="font-bold uppercase text-2xl md:text-4xl lg:text-6xl text-[#161616] lg:mb-20 leading-snug">
-            Top creators of <br /> the week
-          </h1>
-          <p className="font-extralight top-creators__text md:w-4/5">
-            “Everything always looked better in black and white. Everything
-            always as if it were the first time; there’s always more people in a
-            black and white photograph. It just makes it seem that there were
-            more people at a gig, more people at a football match, than with
-            colour photography. Everything looks more exciting.”– Jack Lowden
-          </p>
+      <section className="flex bg-creatorsBg  py-6 px-2 gap-3 relative">
+        <div className="top-creators flex-1">
+          <div className="md:pl-20">
+            <h1 className="font-bold uppercase text-2xl md:text-4xl lg:text-6xl text-[#161616] lg:mb-20 leading-snug">
+              Top creators of <br /> the week
+            </h1>
+            <p className="font-extralight top-creators__text md:w-4/5">
+              “Everything always looked better in black and white. Everything
+              always as if it were the first time; there’s always more people in
+              a black and white photograph. It just makes it seem that there
+              were more people at a gig, more people at a football match, than
+              with colour photography. Everything looks more exciting.”– Jack
+              Lowden
+            </p>
+          </div>
+          <div className="place-self-end md:translate-y-10 translate-y-12 auction">
+            <h1 className="font-clashDisplay text-6xl font-bold relative before:absolute before:w-full before:h-2 lg:text-[170px] before:bg-black before:inset-y-1/2 w-fit place-self-end">
+              1985
+            </h1>
+            <img
+              src={creator}
+              className="w-[70%]   flex items-end ml-12 z-50 "
+            />
+          </div>
         </div>
-        <div className="place-self-end">
-          <img
-            src={creator}
-            className="w-[70%]  md:translate-y-10 flex items-end ml-12 translate-y-12"
-          />
+        <div className="flex h-min gap-4  absolute z-40 w-[30%] md:w-auto  right-0  md:mr-10 overflow-hidden">
+          <div
+            className={`w-2 bg-[#AEAEAE] overflow-hidden rounded-full relative after:absolute after:w-full after:inset-x-0 after:bottom-0 after:h-1/4 after:bg-black after:rounded-full hidden md:block `}
+          ></div>
+          <ul className="flex md:flex-col top-0 left-0  list-disc text-xs md:text-2xl md:list-none font-clashDisplay font-normal lg:text-4xl gap-5">
+            {DUMMY_DATA.map((data, i) => (
+              <li className="capitalize list-item" key={data}>
+                {data}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </main>

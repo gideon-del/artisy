@@ -9,7 +9,7 @@
   @apply relative p-4 font-satoshi md:flex md:justify-evenly md:mb-12;
 }
 .nav {
-  @apply flex flex-col space-y-10 fixed w-screen transition-all duration-300 h-screen md:translate-x-0 md:relative md:flex-row  md:h-auto md:w-auto md:space-y-0 md:space-x-14  bg-white md:justify-around z-50 right-0 pl-5 md:pl-0;
+  @apply flex flex-col space-y-10 fixed w-screen inset-0 transition-all duration-300 h-screen md:translate-x-0 md:relative md:flex-row  md:h-auto md:w-auto md:space-y-0 md:space-x-14  bg-white md:justify-around z-50 right-0 pl-5 md:pl-0;
   flex-basis: 50%;
 }
 .logo {
@@ -86,7 +86,7 @@ img {
   @apply text-titleHome text-2xl font-satoshi font-medium md:text-4xl lg:text-5xl mb-4;
 }
 .top-creators {
-  @apply py-6 px-2 bg-creatorsBg mb-2 font-clashDisplay grid items-stretch;
+  @apply font-clashDisplay grid items-stretch;
 }
 .top-creators img {
   align-self: end;
